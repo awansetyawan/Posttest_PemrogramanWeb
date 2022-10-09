@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Outline&family=Fjalla+One&family=Libre+Barcode+128+Text&family=Rubik+Distressed&display=swap");
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.baris {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kolom,
+.kolom-1,
+.kolom-2,
+.kolom-3,
+.kolom-4,
+.kolom-5,
+.kolom-6,
+.kolom-7,
+.kolom-8,
+.kolom-9,
+.kolom-10,
+.kolom-11,
+.kolom-12 {
+  position: relative;
+  width: 100%;
+}
+
+html {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("image/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.dark-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("image/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: rgba(20, 30, 30, 0.5);
+  width: 60%;
+  margin: auto;
+}
+
+.judul {
+  display: flex;
+  font-family: "Black Ops One";
+  color: #fff;
+  text-shadow: #000 5px 10px 4px;
+  font-size: 60px;
+  color: white;
+  justify-content: center;
+  margin: auto;
+}
+
+header h1 {
+  color: aliceblue;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 60%;
+  margin-top: 10px;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Fjalla One";
+}
+
+.tanda {
+  background-color: sienna;
+}
+
+li a:hover:not(.tanda) {
+  background-color: #111;
+}
+
+main {
+  margin: auto;
+  width: 60%;
+  background-color: wheat;
+}
+
+#guitar-list .guitar-item img {
+  padding-left: 5px;
+  height: 210px;
+  object-fit: contain;
+  background-size: cover;
+}
+
+#guitar-list .guitar-item p {
+  padding-left: 30px;
+  font-family: "Black Ops One";
+  color: saddlebrown;
+  font-size: 15px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background-color: #333;
+  width: 60%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+p {
+  color: #fff;
+}
+
+p a {
+  text-decoration: none;
+  font-family: "Libre Barcode 128 Text";
+  font-size: 26px;
+  color: #fff;
+}
+
+.info {
+  padding-left: 20px;
+  color: #fff;
+}
+
+.copyright {
+  padding-right: 20px;
+  text-align: right;
+  font-size: 13px;
+}
+
+#profil {
+  text-align: center;
+  border: 2px solid sienna;
+  width: 198px;
+  height: 199px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.halaman-aboutme .kolom h2 {
+  font-family: "Black Ops One";
+  color: saddlebrown;
+  font-size: 30px;
+}
+
+.halaman-aboutme .kolom p {
+  font-family: "Fjalla One";
+  color: #111;
+  font-size: 30px;
+}
+
+.halaman-aboutme .kolom h3 {
+  font-family: "Fjalla One";
+  color: #111;
+  font-size: 17px;
+}
+
+.active {
+  transition: all 0.2s ease-in;
+  background-color:#111;
+}
+
+.switch{
+  transform: translate(20%, 45%);
+}
+
+.switch label{
+  background-color: black;
+  width: 55px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .30s ease-in;
+}
+
+.switch label::after{
+  content: "";
+  background-color: wheat;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-radius: 50px;
+  top: 2px;
+  left: 5px;
+  transition: all .30s ease-in;
+}
+
+.switch .switch-dark:checked + label{
+  background-color: rgb(190, 184, 184);
+}
+
+.switch .switch-dark:checked + label::after{
+  left: 26px;
+  background-color: rgb(46, 46, 46);
+}
+
+@media (min-width: 768px) {
+  .kolom-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .kolom-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .kolom-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .kolom-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .kolom-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .kolom-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .kolom-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .kolom-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .kolom-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .kolom-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .kolom-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .kolom-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:1115px){
+
+  #guitar-list .guitar-item img {
+    padding-left: 10px;
+    height: 160px;
+  }
+
+  #guitar-list .guitar-item p {
+    padding-left: 40px;
+    font-size: 10px;
+  }
+  
+  .judul {
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #logo {
+    height: 100px;
+    background-size: cover;
+    object-fit: contain;
+  }
+  
+  .judul {
+    font-size: 25px;
+    padding-bottom: 30px;
+  }
+  
+  nav ul li a {
+    padding: 12px 12px;
+    font-size: 10px;
+  }
+  
+  .active {
+    font-size: 10px;
+  }
+  
+  #guitar-list .guitar-item img {
+    padding-left: 30px;
+    height: 200px;
+  }
+  
+  #guitar-list .guitar-item p {
+    padding-left: 10px;
+    font-size: 11px;
+  }
+  
+  p a {
+    font-size: 15px;
+  }
+  
+  .info {
+    padding-left: 5px;
+  }
+  
+  .copyright {
+    text-align: left;
+    font-size: 7px;
+    padding-left: 5px;
+    padding-bottom: 47px;
+  }
+  
+  #halaman-aboutme .kolom h2 {
+    font-size: 16px;
+  }
+  
+  #halaman-aboutme .kolom p {
+    font-size: 13px;
+  }
+  
+  #halaman-aboutme .kolom h3 {
+    font-size: 10px;
+  }
+  
+  #profil {
+    text-align: center;
+    width: 160px;
+    height: 160px;
+  }
+
+  .switch{
+    padding: 2px 1px 8px 1px;
+    transform: translate(70%, 19%);
+  }
+  
+  .switch label{
+    padding: 0px 0px 2px 0px;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .switch label::after{
+    width: 12px;
+    height: 14px;
+    top: 4px;
+    left: 4px;
+  }
+}
