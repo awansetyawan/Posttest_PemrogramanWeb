@@ -9,20 +9,29 @@ $('#checkbox').on('click', function () {
     latar.classList.toggle('dark-bg');
 })
 
-const ket = document.getElementsByClassName('hasil');
-const data = document.getElementsByTagName('pre');
+const header = document.getElementsByClassName('judul');
+
+const bio = document.getElementsByClassName('datadiri');
 
 const check = document.querySelector("input[id=checkbox]");
 check.addEventListener('change', function () {
   if (this.checked) {
     alert('Anda beralih Ke Mode Gelap');
 
-    ket[0].style.color = 'white';
-    data[0].style.color = 'wheat';
+    // Manipulasi DOM Tulisan Judul
+    header[0].innerHTML = 'Dark Gitar';
+
+    // Manipulasi DOM Warna pada Judul
+    header[0].style.color = 'wheat';
+
+    bio[0].style.color = 'white';
+
   } else {
 
+    header[0].innerHTML = 'Galeri Gitar';
+    header[0].style.color = 'white';
+
     alert('Anda beralih Ke Mode Terang');
-    ket[0].style.color = 'black';
-    data[0].style.color = 'white';
+    bio[0].style.color = 'black';
   }
 });
