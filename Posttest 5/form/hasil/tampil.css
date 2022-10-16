@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Outline&family=Fjalla+One&family=Libre+Barcode+128+Text&family=Rubik+Distressed&display=swap");
+
+
+.hasil{
+    padding: 0px 40px 10px 40px;
+    color:black;
+}
+
+.hasil .atas{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Fjalla One";
+}
+
+pre {
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    padding: 5px 0px 5px 0px;
+}
+
+.hasil .tengah{
+    font-size: 20px;
+    font-family: "Fjalla One";
+}
+
+.hasil .bawah{
+    font-size: 15px;
+    font-family: "Fjalla One";
+}
+
+.terima{
+    margin-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Black Ops One";
+    color: sienna;
+    margin-top: 0px;
+}
+
+button {
+    font-family: "Fjalla One";
+    font-size: 12px;
+    background: sienna;
+    color: white;
+    border: black 1px solid;
+    border-radius: 9px;
+    padding: 5px 10px;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+@media screen and (max-width:1115px){
+    .terima{
+        font-size: 25px;
+    }
+
+    .hasil .atas{
+        font-size: 20px;
+    }
+
+    .hasil .tengah{
+        font-size: 17px;
+    }
+
+    pre {
+        font-size: 13px;
+    }
+
+    .hasil .bawah{
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 4px 7px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hasil{
+        padding: 0px 10px 10px 10px;
+    }
+    
+    .terima{
+        font-size: 20px;
+    }
+
+    .hasil .tengah{
+        font-size: 14px;
+    }
+
+    pre {
+        font-size: 9px;
+    }
+
+    .hasil .bawah{
+        font-size: 10px;
+    }
+
+    button {
+        font-size: 8px;
+        padding: 3px 7px;
+    }
+}
