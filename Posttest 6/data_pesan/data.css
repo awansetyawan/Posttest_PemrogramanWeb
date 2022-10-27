@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Outline&family=Fjalla+One&family=Libre+Barcode+128+Text&family=Rubik+Distressed&display=swap");
+
+.konten {
+    padding-bottom: 20px;
+}
+
+.pesan {
+    margin-bottom: 5px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Black Ops One";
+    color: sienna;
+    margin-top: 0px;
+}
+
+.posisi{
+    padding: 30px 30px 0px 30px;
+}
+
+.efek{
+    overflow-x: auto;
+}
+
+tr:nth-child(odd) {
+    background-color:  rgba(40, 25, 9, 0.2);
+}
+
+table {
+    table-layout:auto;
+    border-collapse: collapse;
+    width: 1900px;
+}
+
+th, td {
+    padding: 15px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: sienna;
+    font-family: "Fjalla One";
+    color: black;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* td {
+    background-color: wheat;
+} */
+
+td a{
+    text-decoration: none;
+    font-family: "Fjalla One";
+    font-size: 17px;
+    color: white;
+    background: sienna;
+    border: black 1px solid;
+    border-radius: 9px;
+    padding: 3px 9px;
+}
+
+.peringatan {
+    font-family: "Fjalla One";
+}
+
+@media screen and (max-width:1115px){
+    .pesan {
+        font-size: 25px;
+    }
+
+    table {
+        width: 1600px;
+    }
+
+    th, td {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    td a{
+        font-size: 13px;
+        padding: 3px 8px;
+    }
+
+    .peringatan{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pesan {
+        font-size: 20px;
+    }
+
+    table {
+        width: 1300px;
+    }
+
+    th, td {
+        padding: 10px 18px;
+        font-size: 11px;
+    }  
+    
+    td img{
+        width: 170px;
+    }
+
+    td a{
+        font-size: 9px;
+        padding: 3px 7px;
+    }
+
+    .peringatan{
+        font-size: 10px;
+    }
+}
