@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Outline&family=Fjalla+One&family=Libre+Barcode+128+Text&family=Rubik+Distressed&display=swap");
+
+html {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../image/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.kotak {
+    width: 550px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 130px;
+    box-sizing: border-box;
+    background-color: wheat;
+    border-radius: 25px;
+    font-size: medium;
+    font-family: "Fjalla One";
+}
+
+.form {
+    padding-top: 30px;
+}
+
+.form_login h3 {
+    font-family: "Black Ops One";
+    font-size: 40px;
+    text-align: center;
+    color: sienna;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.form_login {
+    text-align: center;
+}
+
+.form_login .input {
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-left: 20px;
+    font-family: "Fjalla One";
+    background-color: cornsilk;
+}
+
+.input {
+    margin: 10px 0px;
+    padding: 10px 5px;
+    width: 403px;
+}
+
+.form_login a {
+    text-decoration: none;
+    color: sienna;
+}
+
+.submit {
+    margin-top: 10px;
+    padding: 10px;
+    width: 430px;
+    border: 1px solid;
+    border-radius: 50px;
+    font-family: "Fjalla One";
+    font-size: 20px;
+    background-color: burlywood;
+}
+
+.submit:hover {
+    background-color: sienna;
+}
+
+@media screen and (max-width:1024px){
+    .kotak {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .kotak {
+        width: 300px;
+    }
+
+    .form_login h3 {
+        font-size: 30px;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .submit {
+        width: 226px;
+        font-size: 16px;
+    }
+}
