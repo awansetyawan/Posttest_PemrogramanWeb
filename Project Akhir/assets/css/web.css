@@ -1,0 +1,56 @@
+body {
+  font-family: 'Open Sans', sans-serif!important;
+}
+
+
+/* * NAVBAR */
+nav#navbar {
+  border-bottom: 2px solid #aeaeae;
+}
+
+nav#navbar #navbar-menu {
+  gap: 1.2rem;
+}
+
+nav#navbar .login-btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: #fff!important;
+  font-weight: bold;
+}
+
+/* * MAIN */
+
+main {
+  min-height: 80vh;
+}
+
+main .heading {
+  padding-left: 2rem;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  border-left: 5px solid var(--primary);
+  font-weight: lighter;
+}
+main .sub-heading {
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+main hr {
+  height: 3px;
+  background: var(--accent);
+}
+main button[type="submit"] {
+  font-family: 'Open Sans', sans-serif!important;
+}
+
+/* * LOGIN */
+
+#login-container {
+  background: linear-gradient(to bottom left, var(--primary) 0%, var(--accent) 100%);
+}

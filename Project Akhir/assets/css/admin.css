@@ -1,0 +1,104 @@
+body {
+  font-family: 'Open Sans', sans-serif!important;
+}
+
+/* * NAVBAR */
+nav#navbar {
+  border-bottom: 2px solid #aeaeae;
+}
+
+nav#navbar #navbar-menu {
+  gap: 1.2rem;
+}
+
+nav#navbar .logout-btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--danger);
+  color: #fff!important;
+  font-weight: bold;
+}
+
+nav#navbar .logout-btn:hover {
+  filter: brightness(0.85);
+}
+
+/* * SIDEBAR */
+aside {
+  min-height: 100vh;
+  background: var(--primary);
+}
+
+aside ul {
+  list-style: none;
+  margin: 0px!important;
+  padding: 0px!important;
+}
+aside ul li {
+  padding: 2rem;
+}
+aside ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+aside ul li a i,
+aside ul li a span {
+  color: #fff;
+}
+
+aside ul li a span {
+  margin-top: 5px;
+}
+
+aside ul li.active {
+  background-color: var(--secondary)!important;
+}
+
+/* * REGISTRATION FORM */
+
+#registration #registration-scopes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  height: 200px;
+  overflow-y: scroll;
+}
+#registration-scopes .registration-scope {
+  display: flex;
+}
+#registration-scopes .registration-scope label {
+  cursor: pointer;
+}
+#registration-scopes .registration-scope input {
+  margin: 10px!important;
+}
+
+
+.auditor-img {
+  width: 190px;
+  background-size: cover;
+  height: 205px;
+  object-fit: cover;
+}
+@media(max-width: 768px) {
+  aside {
+    min-height: 0px;
+  }
+
+  aside ul {
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  aside ul li {
+    display: inline-block;
+  }
+}
